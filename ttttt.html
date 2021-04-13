@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+
 </body>
 </html>
+<script>
+    let dem =1;
+    let thaydoi=0;
+    let tong=0;
+    document.write("danh sach cac so vua chia het cho 3 va 5 la: <br>")
+    while(dem<=20) {
+        if (thaydoi%3==0 && thaydoi%5==0 ) {
+            dem++;
+            tong += thaydoi;
+            document.write(thaydoi + " " );
+        }
+        thaydoi++;
+    }
+    document.write("<br>tong cac so chia het cho 3 va 5 la:" + tong );
+</script>

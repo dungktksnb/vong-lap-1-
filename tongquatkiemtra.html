@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtrasonguyto(number){
+        if(number<2){
+            return false;
+        }
+        for (i=2;i<number;i++){
+            if(number%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+function displayPrime(quantily){
+        let cont =0;
+        let number=1;
+        let sum=0;
+
+        while(cont<quantily){
+            if(kiemtrasonguyto(number)){
+                cont++;
+                document.write(number + " ");
+                }
+            number++;
+            }
+
+
+}
+
+quantity=+prompt("nhập số lượng số nguyên tố : ");
+displayPrime(quantity);
+</script>
+
+</body>
+</html>
